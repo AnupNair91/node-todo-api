@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 const {ObjectId} = require('mongodb');
 const {mongoose} = require('./../server/db/mongoose');
 const {Todo} = require('./../server/models/todo');
@@ -29,4 +31,4 @@ var id = '5c78074a412765235c54b900';
 User.findById(id).then((user) => {
     if(!user) return console.log('ID not found.');
     console.log('User by Id\n', user);
-}).catch((e) => console.log(e))
+}).catch((e) => console.log(e));
